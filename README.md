@@ -1,4 +1,4 @@
-# Covid Vaccine Management System  
+# Covid Vaccine Management System  (Tutorial 5 of 953102 ADT & Problem Solving)
 
 ## Overview  
 This program implements a linked list to manage Covid-19 vaccination records. It stores applicant information, including their vaccine history, and provides operations such as insertion, deletion, and traversal of records.  

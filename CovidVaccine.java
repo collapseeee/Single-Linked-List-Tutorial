@@ -1,18 +1,31 @@
-import java.util.ArrayList;
+/**
+ * author: Nattikorn Sae-sue, 672115014
+ * nattikorn_s@cmu.ac.th
+ * files: CovidVaccine.java, Vaccine.java, Node.java, LinkedList.java and TutorialFifthMain.java
+ */
 
 public class CovidVaccine {
-    private int SID;
+    private String ID;
     private String firstName;
     private String lastName;
-    private String[] vaccineList;
+    private Vaccine[] vaccineList;
 
-    public CovidVaccine(int SID, String firstName, String lastName, String[] vaccineList) {
-        this.SID = SID;
+    public CovidVaccine(String ID, String firstName, String lastName, Vaccine[] vaccineList) {
+        this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.vaccineList  = vaccineList;
+        this.vaccineList = vaccineList;
     }
 
+    public String getID() {
+        return ID;
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
     public String vaccineListToString() {
         String result = "";
         if (vaccineList.length == 0) {
@@ -24,8 +37,12 @@ public class CovidVaccine {
         result = result + vaccineList[vaccineList.length-1];
         return result;
     }
+    public int getVaccineCount() {
+        return vaccineList.length;
+    }
     @Override
     public String toString() {
-        return "[ " + SID + ", " + firstName + " " + lastName + "   Vaccine Taken (" + vaccineList.length + ") : " + vaccineListToString() + ". ]";
+        return "[ " + ID + ", " + firstName + " " + lastName +
+        "\n  Vaccine Taken (" + getVaccineCount() + ") : " + vaccineListToString() + ". ]\n";
     }
 }

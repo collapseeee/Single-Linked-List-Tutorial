@@ -1,3 +1,9 @@
+/**
+ * author: Nattikorn Sae-sue, 672115014
+ * nattikorn_s@cmu.ac.th
+ * files: CovidVaccine.java, Vaccine.java, Node.java, LinkedList.java and TutorialFifthMain.java
+ */
+
 public class Node {
     private CovidVaccine data;
     private Node next;
